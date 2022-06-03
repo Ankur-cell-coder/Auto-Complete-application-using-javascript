@@ -21,6 +21,8 @@ const items = [
 ];
 
 const root = new makeNode('\0');
+
+///adding each item in trie
 for (const item of items)
     add(item, 0, root);
 

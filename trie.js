@@ -16,6 +16,8 @@ function add(str, i, root) {
         root.map[str[i]] = new makeNode(str[i]);
 
     root.words.push(str);
+
+    //recursion call.
     add(str, i + 1, root.map[str[i]]);
 }
 
